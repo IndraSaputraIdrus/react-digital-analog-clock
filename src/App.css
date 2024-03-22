@@ -1,0 +1,32 @@
+.clock {
+  position: relative;
+  border: 1px solid white;
+  width: 400px;
+  aspect-ratio: 1 / 1;
+}
+
+.clock__center__point {
+  --size: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: var(--size);
+  height: var(--size);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.clock__hand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+  position: absolute;
+  height: 50%;
+  left: 50%;
+  translate: -50%;
+  transform-origin: bottom;
+  padding: 0 1rem;
+  font-weight: 600;
+}
